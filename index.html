@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Hari Haran Portfolio</title>
+        <title>Hariharan Portfolio</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -24,6 +24,7 @@
             --bg-light: #f8fafc;
             --white: #ffffff;
         }
+
         .projects-section {
             background-color: var(--white);
         }
@@ -51,6 +52,7 @@
             color: white;
             font-size: 3rem;
         }
+
         .btn-outline-custom {
             border: 2px solid var(--primary-color);
             color: var(--primary-color);
@@ -73,6 +75,7 @@
             padding: 8px 10px;
             font-size: 0.9rem;
         }
+
         .footer {
             background-color: var(--text-light);
             color: white;
@@ -99,14 +102,47 @@
             color: white;
             transform: translateY(-3px);
         }
+
+        .icon-wrapper {
+            position: relative;
+            display: inline-block;
+        }
+
+        .icon-wrapper img {
+            width: 50px;
+            cursor: pointer;
+        }
+
+        .tooltip {
+            position: absolute;
+            bottom: -35px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #000;
+            color: #fff;
+            padding: 4px 8px;
+            font-size: 12px;
+            border-radius: 4px;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: 0.3s;
+        }
+
+        .icon-wrapper:hover .tooltip {
+            opacity: 1;
+        }
+
         </style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Hari Haran. D</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/hari.png" alt="..." /></span>
+                <span class="d-block d-lg-none">Hariharan. D</span>
+                <span class="d-none d-lg-block">
+                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/hari.png" alt="..." />
+                </span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -127,7 +163,7 @@
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
                     <h1 class="mb-0s">
-                        Hari Haran. D
+                        Hariharan. D
                         <!-- <span class="text-primary">D</span> -->
                     </h1>
                     <div class="subheading mb-5">
@@ -208,15 +244,67 @@
                     <h2 class="mb-5">Skills</h2>
                     <div class="subheading mb-3">Programming Languages & Tools</div>
                     <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fa-brands fa-bootstrap"></i></li>
-                        <li class="list-inline-item"><i class="fa-brands fa-python"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                        <!-- <li class="list-inline-item"><i class="fab fa-angular"></i></li> -->
-                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
+                        <li class="list-inline-item">
+                            <div class="icon-wrapper">
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/html5.svg" alt="HTML 5" style="filter: invert(45%) sepia(87%) saturate(1680%) hue-rotate(346deg) brightness(97%) contrast(102%);" />
+                                <span class="tooltip">HTML 5</span>
+                            </div>
+                        </li>
+                        <li class="list-inline-item">
+                            <div class="icon-wrapper">
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/css3.svg" alt="CSS3" style="filter: invert(33%) sepia(86%) saturate(1718%) hue-rotate(191deg) brightness(95%) contrast(97%);" />
+                                <span class="tooltip">CSS 3</span>
+                            </div>
+                        </li>
+                        <li class="list-inline-item">
+                            <div class="icon-wrapper">
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/bootstrap.svg" alt="Bootstrap" style="filter: invert(29%) sepia(84%) saturate(2222%) hue-rotate(266deg) brightness(96%) contrast(98%);" />
+                                <span class="tooltip">Bootstrap</span>
+                            </div>
+                        </li>
+                        <li class="list-inline-item">
+                            <div class="icon-wrapper">
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg" alt="Python" style="filter: invert(42%) sepia(89%) saturate(466%) hue-rotate(161deg) brightness(94%) contrast(96%);" />
+                                <span class="tooltip">Python</span>
+                            </div>
+                        </li>
+                        <li class="list-inline-item">
+                            <div class="icon-wrapper">
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/javascript.svg" alt="JavaScript" style="filter: invert(84%) sepia(65%) saturate(747%) hue-rotate(359deg) brightness(101%) contrast(101%);" />
+                                <span class="tooltip">JavaScript</span>
+                            </div>
+                        </li>
+                        <li class="list-inline-item">
+                            <div class="icon-wrapper">
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/django.svg" alt="Django" style="filter: invert(26%) sepia(63%) saturate(354%) hue-rotate(92deg) brightness(92%) contrast(93%);" />
+                                <span class="tooltip">Django</span>
+                            </div>
+                        </li>
+                        <li class="list-inline-item">
+                            <div class="icon-wrapper">
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/react.svg" alt="React" style="filter: invert(69%) sepia(83%) saturate(469%) hue-rotate(162deg) brightness(102%) contrast(97%);" />
+                                <span class="tooltip">React</span>
+                            </div>
+                        </li>
                         <!-- <li class="list-inline-item"><i class="fab fa-node-js"></i></li> -->
-                        <li class="list-inline-item"><i class="fa-solid fa-database"></i></li>
+                        <li class="list-inline-item">
+                            <div class="icon-wrapper">
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/mysql.svg" alt="My SQL" style="filter: invert(35%) sepia(32%) saturate(1120%) hue-rotate(176deg) brightness(95%) contrast(92%);" />
+                                <span class="tooltip">My SQL</span>
+                            </div>
+                        </li>
+                        <li class="list-inline-item">
+                            <div class="icon-wrapper">
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/git.svg" alt="Git" style="filter: invert(41%) sepia(79%) saturate(2120%) hue-rotate(346deg) brightness(98%) contrast(101%);" />
+                                <span class="tooltip">Git</span>
+                            </div>
+                        </li>
+                        <li class="list-inline-item">
+                            <div class="icon-wrapper">
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/visualstudiocode.svg" alt="Visual Studio Code" style="filter: invert(28%) sepia(87%) saturate(2930%) hue-rotate(196deg);" />
+                                <span class="tooltip">Visual Studio Code</span>
+                            </div>
+                        </li>
                     </ul>
             </section>
             <hr class="m-0" />
